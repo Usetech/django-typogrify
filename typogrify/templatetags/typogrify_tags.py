@@ -209,7 +209,12 @@ def smartypants(text):
     u'The &#8220;Green&#8221; man'
     """
 
-    return _smartypants.smartyPants(text)
+    t = _smartypants.smartyPants(text)
+    # replace "curly" quotes with russian-style quotes (&laquo; and &raquo;)
+    t = t.replace('&#8220;', '&#171;')
+    t = t.replace('&#8221;', '&#187;')
+    return t
+
 
 
 @smart_filter

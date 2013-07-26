@@ -63,6 +63,7 @@ smartypants
 * Backticks-style quotes (``like this'') into “curly” quote HTML entities (&lsquo; | &rsquo; | &ldquo; | &rdquo;)
 * Dashes (“--” and “---”) into n-dash and m-dash entities (&ndash; | &mdash;)
 * Three consecutive dots (“...”) into an ellipsis entity (&hellip;)
+* Double "curly" HTML entities like &ldquo; | &rdquo; to russian quotes (&laquo; | &raquo;)
 
 widont
 ------
